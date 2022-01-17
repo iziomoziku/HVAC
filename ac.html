@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Conditioning</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="HVAC-pics/flavicon/favicon1.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stlye.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+      #nav-placeholder {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <section class="ac__hero hero-section">
+      <div class="hero_container">
+        <div class="container ac__hero__wrapper">
+          <h1 class="ac__hero__title main-title">
+            Experience <span class="trial--color-1">subzero cooling</span>
+          </h1>
+          <p class="ac__hero__sub-title secondary-title">
+            We repair, service, install, and maintain all sizes, makes, and
+            brands of air conditioners. Don’t wait for the temperature to rise
+            before getting your AC in order.
+          </p>
+          <!-- <p class="hero-section-cta">Call <span class="cta__services">647 -  404 - 4461</span>  for an immediate service.</p> -->
+          <p class="hero-section-cta">
+            Call <span class="cta__services">222 - 888 - 4444</span> for an
+            immediate service.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ac__services">
+      <div class="ac__service-scroll services-scroll scroll__menu">
+        <a class="scroll__menu--item services-scroll-item" href="#"
+          >Ductless split unit</a
+        >
+        <a class="scroll__menu--item services-scroll-item" href="#"
+          >Central air systems</a
+        >
+        <a class="scroll__menu--item services-scroll-item" href="#">Fan coil</a>
+      </div>
+
+      <section class="ac__services__main">
+        <div class="container">
+          <p class="light-dark-font">
+            After a long day at work, the last thing you want is to get home to
+            your family with no AC. A place you call home should be cool,
+            relaxing, and filled with laughter. Our job is to make sure that you
+            and your family can come back home knowing full well that you will
+            experience subzero cooling.
+          </p>
+          <p class="light-dark-font">
+            With our services, we will keep the hot air outside all summer so
+            you can stay cool and refreshed even during the hottest days knowing
+            that your air conditioners won’t break down.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="wrapper">
+      <div class="container">
+        <h2 class="primary--color primary--title">What you get from us</h2>
+        <div id="benefit-placeholder"></div>
+      </div>
+    </section>
+
+    <section class="ac__our-services wrapper">
+      <div class="ac__our-services__wrapper container">
+        <h2 class="ac__our-services__title primary--color primary--title">
+          Our air conditioning services
+        </h2>
+        <div class="ac__our-services-main-container">
+          <div class="ac__our-services-main">
+            <p class="ac__our-services__content light-dark-font">
+              Our technicians are fully licenced and available 365 days in a
+              year, 24/7 to repair, service, install, and maintain all types,
+              makes, and models of AC. Some of the HVAC equipments we work on
+              are listed below. Click on the learn more to get more details.
+            </p>
+            <p class="ac__our-services__content light-dark-font">
+              We provide maintenance and protection services that will help your
+              AC system last longer and save on energy costs.
+            </p>
+          </div>
+          <img
+            class="ac__our-services__image large__screen"
+            src="HVAC-pics/Images/Air-conditioner.jpg"
+            alt="#"
+          />
+        </div>
+
+        <div class="ac__our-services__container services__container">
+          <div class="ac__our-services__services services__container__item">
+            <img
+              class="ac__our-services__services-image services__item__image"
+              src="HVAC-PICS/Images/AC-split-units.jpg"
+              alt=""
+            />
+            <h3
+              class="ac__our-services__services-title sub--title services__item__title"
+            >
+              Ductless split unit
+            </h3>
+          </div>
+          <div class="ac__our-services__services services__container__item">
+            <img
+              class="ac__our-services__services-image services__item__image"
+              src="HVAC-PICS/Images/AC-Central-air.jpg"
+              alt=""
+            />
+            <h3
+              class="ac__our-services__services-title sub--title services__item__title"
+            >
+              Central air systems
+            </h3>
+          </div>
+          <!-- <div class="ac__our-services__services services__container__item">
+            <img
+              class="ac__our-services__services-image services__item__image"
+              src="HVAC-PICS/Images/AC-split-units.jpg"
+              alt=""
+            />
+            <h3
+              class="ac__our-services__services-title sub--title services__item__title"
+            >
+              Fan coil
+            </h3>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="referral-placeholder"></section>
+
+    <section id="cta-placeholder"></section>
+
+    <section id="authorized-placeholder"></section>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+
+      $(function () {
+        $("#benefit-placeholder").load("benefit.html");
+      });
+
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+
+      $(function () {
+        $("#authorized-placeholder").load("Authorized.html");
+      });
+
+      $(function () {
+        $("#cta-placeholder").load("cta.html");
+      });
+
+      $(function () {
+        $("#referral-placeholder").load("referral.html");
+      });
+    </script>
+  </body>
+</html>

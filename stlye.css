@@ -1,0 +1,1037 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --page-bg-color: #f5f5f7;
+  --primary-color: #003ccd;
+  --secondary-color: #cf0004;
+  --accent-color: #8037ff;
+  --dark-font-color: #1d1d1f;
+  --light-dark-font-color: #6e6e73;
+  --card-bg-color: #eaf0fe;
+  --navigation-bg-color: rgba(255, 255, 255, 0.52);
+  --trial-color-2: #ff5154;
+  --trial-color-1: #3772ff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  line-height: 1.2;
+  background-color: var(--page-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------  */
+/* Accesories   */
+/* ------------ */
+
+.container {
+  width: 95%;
+  max-width: 1980px;
+  margin: 0 auto;
+}
+
+.hero_container {
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav,
+ul,
+li,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  font-size: inherit;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 2px var(--secondary-color) solid;
+  border-radius: 100px;
+  padding: 0.125em 1em;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.cta__services {
+  color: var(--secondary-color);
+  font-size: clamp(1.5rem, 2.5vw, 6.5rem);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 2em;
+  text-align: center;
+  width: 85%;
+  max-width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  transform: translateY(-2%);
+}
+
+.card__logo {
+  width: clamp(3.5rem, 15%, 17rem);
+  margin-bottom: 1em;
+}
+
+.card__container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.horizontal__scroll__card {
+  background-color: rgba(255, 255, 255, 0.39);
+  margin: 1em 1em 1em 0;
+  text-align: center;
+  padding: 1.5em 2em;
+  width: 85%;
+  max-width: 350px;
+  border-radius: 0.5em;
+}
+
+.hero-section {
+  min-height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-cta {
+  font-size: clamp(1rem, 2vw, 6rem);
+  margin-top: 3em;
+}
+
+.light-dark-font {
+  color: var(--light-dark-font-color);
+  max-width: 60ch;
+  margin: 0.5em auto;
+}
+
+.light-font-weight {
+  font-weight: 300;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link--text {
+  color: #617bb8;
+}
+
+.link--icon {
+  width: 0.6%;
+  height: 0.6%;
+  min-width: 0.275rem;
+  margin-left: 0.5em;
+  margin-top: 2.72px;
+}
+
+.large__screen {
+  display: none;
+}
+
+.logo-link {
+  width: 35%;
+  height: 35%;
+  min-width: 13rem;
+}
+
+.main-title {
+  font-size: clamp(2rem, 3.5vw, 7rem);
+  max-width: 25ch;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.25em auto;
+  color: #ebe8e8;
+}
+
+.primary--color {
+  color: var(--primary-color);
+}
+
+.primary--title::first-letter {
+  text-transform: capitalize;
+}
+
+.primary--title {
+  /* font-size: 1.8rem; */
+  font-size: clamp(1.925rem, 3.5vw, 6.3rem);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0;
+}
+
+.scroll__menu {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll__menu::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll__menu--item {
+  flex: 0 0 auto;
+}
+
+.secondary--color {
+  color: var(--secondary-color);
+}
+
+.services__container {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services__container__item {
+  background-color: var(--card-bg-color);
+  max-width: 300px;
+  /* max-width: 500px; */
+  padding: 1em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.services__item__title {
+  margin-top: 1em;
+}
+
+.services__item__more-info {
+  display: flex;
+  justify-content: center;
+}
+
+.services__item__link {
+  color: var(--dark-font-color);
+}
+
+.secondary-title {
+  font-size: clamp(1rem, 1.5vw, 4rem);
+  max-width: 50ch;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.sub--title {
+  /* font-size: 1.25rem; */
+  font-size: clamp(1.25rem, 2vw, 3rem);
+  line-height: 1.2;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0 0 0.5em 0;
+}
+
+.small__screen {
+  display: none;
+}
+
+.trial--color-2 {
+  color: #ff5154;
+}
+
+.trial--color-1 {
+  color: #3772ff;
+}
+
+.wrapper {
+  padding: 3em 0;
+}
+
+/* ---------------- */
+/*     Navigation   */
+/* ---------------- */
+
+.nav__list,
+.nav__wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.nav__wrapper {
+  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__toggle {
+  width: 10%;
+  height: 10%;
+  max-width: 1.8em;
+  min-width: 1.75em;
+  display: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: none;
+}
+
+/* Style The Dropdown Button  */
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  color: white;
+  font-size: inherit;
+  padding: 0;
+  color: black;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d6d6d6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+  width: 60%;
+  height: 60%;
+  min-width: 0.275rem;
+  transform: rotate(90deg);
+}
+
+/* ------------- */
+/*     header   */
+/* ------------- */
+
+.col {
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 2em;
+}
+
+.header {
+  background-color: rgb(204, 204, 204);
+  width: 100%;
+  padding: 1em 0 0.5em;
+}
+
+.header__aside {
+  background-color: #2a2a2a;
+  padding: 0.7em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .header__nav {
+    display: none;
+} */
+
+.header__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__btn {
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+}
+
+.header__btn:hover {
+  text-decoration: none;
+}
+
+.header__phone {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+}
+
+.header__hamburger {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ------------- */
+/*     hero   */
+/* ------------- */
+
+.hero {
+  background: rgba(31, 30, 30, 0.822)
+    url(HVAC-pics/home/Pics/Home_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(240, 238, 238);
+}
+
+/* .hero__title {
+    line-height: 1.2;
+    margin: 0;
+} */
+
+.hero__secondarytitle {
+  font-weight: lighter;
+}
+
+.hero__sub-title {
+  margin-bottom: 3em;
+}
+
+.hero__btn {
+  font-size: clamp(1rem, 2.7vw, 3.5rem);
+  color: rgb(255, 255, 255);
+  background-color: var(--secondary-color);
+  border: none;
+  margin-top: 3em;
+}
+
+.hero__btn:hover {
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+}
+
+/* ---------------------- */
+/*     Services           */
+/* --------------------- */
+
+.services {
+  background: rgb(31, 30, 30) url(HVAC-pics/home/Pics/air-conditioners.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 3em 0 0.0625em;
+}
+
+.services__card:first-child {
+  margin-left: 0.5em;
+}
+
+.services__logo--title {
+  color: black;
+}
+
+.services__large-screen {
+  display: none;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__content,
+.services__more-info {
+  color: rgb(240, 238, 238);
+}
+
+.services__more-info {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__description {
+  max-width: 70ch;
+}
+
+.services__link {
+  width: 100%;
+}
+
+.services__link--icon {
+  width: 2.9%;
+  height: 2.9%;
+  min-width: 0.275rem;
+  margin-left: 0.5em;
+  margin-top: 2.72px;
+}
+
+/* ---------------------- */
+/*     reference section  */
+/* --------------------- */
+
+.reference__quote {
+  padding: 0.5em 0.5em;
+  text-align: left;
+  width: 95%;
+  max-width: 550px;
+}
+
+.reference__main-content {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+/* ---------------------- */
+/*     CTA section           */
+/* --------------------- */
+
+.cta {
+  background: url(HVAC-pics/home/Background/Rectangle\ 205.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.cta__title,
+.cta__project-title {
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  font-weight: 300;
+  color: var(--dark-font-color);
+  margin-bottom: 1em;
+}
+
+.cta__number {
+  color: var(--secondary-color);
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  margin: 0 0 1em;
+  font-weight: 600;
+}
+
+.cta__divider {
+  margin: 0 auto;
+  border-bottom: 1px black solid;
+  width: 80%;
+  margin-bottom: 1.5em;
+}
+
+.cta__content {
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+/* ---------------------- */
+/*     Authorization      */
+/*        section        */
+/* --------------------- */
+
+.authorization__logo {
+  background-color: rgb(255, 255, 255);
+  margin-top: 2em;
+  padding: 1.5em 0;
+}
+
+.authorization__main {
+  color: var(--light-dark-font-color);
+}
+
+.authorization__link {
+  color: black;
+  font-weight: 600;
+}
+
+.authorization__brand {
+  width: 15rem;
+  height: 5rem;
+}
+
+.authorization__more-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+/* ---------------------- */
+/*     Footer Section      */
+/* --------------------- */
+
+.footer {
+  background-color: var(--card-bg-color);
+  padding-bottom: 4em;
+}
+
+.footer__content {
+  margin-top: 1em;
+  max-width: 70ch;
+}
+
+.footer__company-logo {
+  width: clamp(18.75rem, 2vh, 40rem);
+  /* max-width: 18.75rem; */
+}
+
+.footer__title {
+  color: #535353;
+  margin: 1em 0;
+}
+
+.footer__main {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.footer__link {
+  display: inline-block;
+  /* margin-top: 0.2em; */
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: clamp(0.5rem, 1vw, 2rem);
+
+  /* font-size: 0.5rem; */
+}
+
+.footer__main-contact {
+  margin-top: 1em;
+}
+
+.footer__logo {
+  width: clamp(1rem, 2vh, 3.5rem);
+  margin: 0;
+}
+
+.footer__contact-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* margin-left: 0.5em; */
+  /* background-color: var(--card-bg-color); */
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+/* ********************** */
+/*     About Page      */
+/* *********************** */
+
+.about__hero {
+  background: rgba(31, 30, 30, 0.822) url(HVAC-pics/Images/Family-pic.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: rgb(240, 238, 238);
+}
+
+/* .about__hero__image { */
+/* width: 20rem;
+    height: 20rem; */
+/* width: 12rem;
+    height: 12rem; 
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    overflow-x: hidden; */
+/* } */
+
+.about__hero__cta {
+  font-weight: 300;
+}
+
+/* ------------------------------ */
+/*     About Journey section      */
+/* ------------------------------ */
+
+.about__journey {
+  background-color: white;
+}
+
+/* ********************** */
+/*     Contact Page      */
+/* *********************** */
+
+.contact__hero__title {
+  color: var(--trial-color-1);
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact__hero {
+  background: url(HVAC-pics/home/Background/Rectangle\ 205.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  min-height: 40vh;
+}
+
+.contact__hero__subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.contact__title {
+  font-size: 1rem;
+}
+
+.contact__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0.2rem;
+}
+
+.contact__container {
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+  /* max-width: 400px; */
+}
+
+.contact__btn {
+  background-color: var(--primary-color);
+  font-size: 1.25rem;
+  padding: 0.5em;
+  font-weight: 600;
+}
+
+.contact__btn:hover {
+  background-color: #003ecdbd;
+}
+
+.contact__name,
+.contact__email {
+  height: 2.5rem;
+}
+
+.contact__name,
+.contact__email,
+.contact__message {
+  background-color: #454545;
+  margin: 1em 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+}
+
+.contact__btn,
+.contact__name,
+.contact__email,
+.contact__message {
+  width: 100%;
+  border-radius: 0.5em;
+  border: none;
+  color: white;
+}
+
+/* ************************* */
+/*     Benefit section      */
+/* ************************** */
+
+.benefit__cutomer {
+  max-width: 650px;
+}
+
+/* ************************* */
+/*     AC services Page      */
+/* ************************** */
+
+/* ------------------------------ */
+/*     ac hero section            */
+/* ------------------------------ */
+
+.ac__hero {
+  background: rgba(31, 30, 30, 0.822)
+    url(HVAC-pics/Images/Multiple-split-units.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(240, 238, 238);
+}
+
+.ac__hero__sub-title {
+  font-size: clamp(1rem, 1.5vw, 3.5rem);
+}
+
+.services-scroll {
+  padding: 1.5em 0;
+  display: flex;
+}
+
+.services-scroll-item {
+  background-color: var(--accent-color);
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  color: white;
+}
+
+.ac__services__main,
+.heating__services__main {
+  margin-top: 1.5em;
+}
+
+/* --------------------------------- */
+/*     ac services section            */
+/* --------------------------------- */
+
+.ac__our-services {
+  background-color: white;
+}
+
+.ac__our-services__image {
+  border-radius: 1em;
+  margin-top: 2em;
+}
+
+/* ************************* */
+/*     Heating services Page      */
+/* ************************** */
+
+/* --------------------------------- */
+/*     heating hero section            */
+/* --------------------------------- */
+
+.heating__hero {
+  background: rgba(31, 30, 30, 0.822)
+    url(HVAC-pics/Images/puppy-in-a-blanket.jpg);
+  opacity: 2;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: rgb(240, 238, 238);
+}
+
+.heating__our__services {
+  background-color: white;
+}
+
+/* ************************* */
+/*     Media Query     */
+/* ************************** */
+
+@media (min-width: 500px) {
+  .ac__service-scroll {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 875px) {
+  .header__aside {
+    display: none;
+  }
+
+  .small__screen {
+    display: block;
+  }
+
+  .scroll__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact__main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .contact__section {
+    max-width: 900px;
+  }
+
+  .contact__container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .quote_contact {
+    width: fit-content;
+    max-width: 500px;
+  }
+
+  .contact__divider {
+    border-left: 1px solid black;
+    border-bottom: none;
+    min-height: 400px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_second_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    /* gap: 2em; */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 875px) {
+  .small__screen {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .nav {
+    background-color: rgb(204, 204, 204);
+    border-top: 1px solid black;
+    transform: translateY(-150%);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    margin: 0 auto;
+    background-color: inherit;
+    padding: 2em 2em;
+  }
+
+  .nav__link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-open .nav,
+  .nav__list {
+    transform: translateY(0);
+    display: flex;
+  }
+}
+
+@media (min-width: 1240px) {
+  .quote_contact {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card__logo {
+    width: clamp(5rem, 20%, 17rem);
+    margin-bottom: 1em;
+  }
+
+  .services__logo {
+    width: clamp(5rem, 20%, 17rem);
+  }
+
+  .services__container__item {
+    max-width: 500px;
+  }
+
+  .horizontal__scroll__card {
+    max-width: 500px;
+  }
+
+  .about__values__customer {
+    max-width: 700px;
+  }
+
+  .about__tech__cutomer {
+    max-width: 650px;
+  }
+}

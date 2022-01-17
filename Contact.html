@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Quote</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="HVAC-pics/flavicon/favicon1.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stlye.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+      #nav-placeholder {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <section class="contact__hero hero-section">
+      <div class="hero_container">
+        <div class="contact__wrapper container">
+          <h1 class="contact__hero__title main-title">Send us a message</h1>
+          <p class="contact__hero__subtitle secondary-title">
+            We are available <strong>365 days in a year, 24/7</strong> to assist
+            you in any way we can.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact wrapper">
+      <div class="contact__section container">
+        <h2 class="contact__title primary--color primary--title">
+          Submit your message to contact us via email.
+        </h2>
+        <div class="contact__main-container">
+          <form action="#" class="contact__container">
+            <input class="contact__name" type="text" placeholder="Your Name" />
+            <br />
+            <input
+              class="contact__email"
+              type="text"
+              placeholder="Your Email"
+            />
+            <br />
+            <textarea
+              class="contact__message"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <br />
+            <input class="contact__btn" type="button" value="Submit" />
+          </form>
+
+          <div class="contact__divider"></div>
+
+          <div class="quote_contact contact small__screen">
+            <div class="footer__contact email">
+              <img
+                class="footer__logo card__logo"
+                src="HVAC-pics/home/icon 6/email.svg"
+                alt="Email"
+              />
+              <!-- <p class="footer__contact-content">hvacmechanicalsystems@yahoo.com</p> -->
+              <p class="footer__contact-content">youremail@yahoo.com</p>
+            </div>
+            <div class="footer__contact location">
+              <img
+                class="footer__logo card__logo"
+                src="HVAC-pics/home/icon 6/location.svg"
+                alt="Location"
+              />
+              <p class="footer__contact-content">Toronto, ON. Canada</p>
+            </div>
+            <div class="footer__contact number">
+              <img
+                class="footer__logo card__logo"
+                src="HVAC-pics/home/icon 6/phone-call.svg"
+                alt="Phone"
+              />
+              <!-- <p class="footer__contact-content">647 - 404 - 4461</p> -->
+              <p class="footer__contact-content">222 - 888 - 4444</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
